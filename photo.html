@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polaroid Collage</title>
+  <link href="./output.css" rel="stylesheet" />
+  <style>
+    .photo-wrapper {
+      position: absolute;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-wrapper:hover {
+      z-index: 10;
+      transform: scale(1.05);
+    }
+
+    .polaroid {
+      width: 150px; /* Increased from 100px */
+      background: white;
+      border: 4px solid white;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body class="bg-[#fcd0c3] flex flex-col items-center justify-center min-h-screen">
+
+  <div class="relative w-full max-w-sm h-[520px] overflow-hidden border-gray-950 border-2 rounded-2xl">
+    
+    <!-- Photos -->
+    <div class="photo-wrapper top-[400px] left-[190px] rotate-[-10deg]">
+      <div class="polaroid">
+        <img src="img\img (20).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <div class="photo-wrapper top-[400px] left-[20px] rotate-[8deg]">
+      <div class="polaroid">
+        <img src="img\img (13).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <div class="photo-wrapper top-[230px] left-[220px] rotate-[-5deg]">
+      <div class="polaroid">
+        <img src="img\img (4).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <div class="photo-wrapper top-[250px] left-[20px] rotate-[12deg]">
+      <div class="polaroid">
+        <img src="img\img (12).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <!-- Center Photo (Main) -->
+    <div class="photo-wrapper top-[180px] left-[70px] rotate-0 z-10">
+      <div class="bg-white shadow-2xl border-4 border-white w-[200px]">
+        <img src="img\img (6).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <div class="photo-wrapper top-[150px] left-[20px] rotate-[-15deg]">
+      <div class="polaroid">
+        <img src="img\img (10).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <div class="photo-wrapper top-[80px] left-[190px] rotate-[15deg]">
+      <div class="polaroid">
+        <img src="img\img (8).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <div class="photo-wrapper top-[40px] left-[20px] rotate-[5deg]">
+      <div class="polaroid">
+        <img src="img\img (9).jpg" class="w-full" />
+      </div>
+    </div>
+
+    <div class="photo-wrapper top-[10px] left-[190px] rotate-[-8deg]">
+      <div class="polaroid">
+        <img src="img\img (14).jpg" class="w-full" />
+      </div>
+    </div>
+
+  </div>
+
+  <a href="samu.html" class="mt-4 px-6 py-2 rounded-full text-white bg-gray-950 shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 ease-in-out animate-pulse-glow">
+    Back
+  </a>
+
+</body>
+</html>
